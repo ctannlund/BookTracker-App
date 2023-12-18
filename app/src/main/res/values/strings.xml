@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">BookTracker</string>
+    <string name="book_title_hint">Enter book title</string>
+    <string name="book_title_label">Title</string>
+    <string name="book_author_hint">Enter book author</string>
+    <string name="book_author_label">Author</string>
+    <string name="book_page_total_hint">Enter book page count</string>
+    <string name="book_page_total_label">Page Count</string>
+    <string name="cancel_button_text">Cancel</string>
+    <string name="save_button_text">Save</string>
+
+    <string name="daily_goal_label">Daily Goal</string>
+    <string name="daily_goal_amount">-- / --</string>
+    <string name="goal_placeholder_text">---</string>
+
+    <string name="channel_name">BookLog App Notifications</string>
+    <string name="channel_description">Reading reminders and notifications.</string>
+</resources>

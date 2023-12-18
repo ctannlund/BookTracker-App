@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/main_navbar"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:background="@color/secondary">
+
+        <ImageButton
+            android:id="@+id/booklist_nav_button"
+            android:layout_width="52dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="3dp"
+            android:paddingTop="3dp"
+            android:background="@drawable/navbar_button_bg"
+            android:contentDescription="Book List"
+            android:src="@drawable/book_home"
+            app:tint="@color/secondary" />
+
+        <ImageButton
+            android:id="@+id/stats_nav_button"
+            android:layout_width="52dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="3dp"
+            android:paddingTop="3dp"
+            android:contentDescription="Goal and Stats"
+            android:background="@android:color/transparent"
+            app:tint="@color/primary"
+            android:src="@drawable/stats"/>
+
+        <ImageButton
+            android:id="@+id/logs_nav_button"
+            android:layout_width="52dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="3dp"
+            android:paddingTop="3dp"
+            android:contentDescription="Logs"
+            android:background="@android:color/transparent"
+            app:tint="@color/primary"
+            android:src="@drawable/logs"/>
+
+        <ImageButton
+            android:id="@+id/bookshelf_nav_button"
+            android:layout_width="52dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="3dp"
+            android:paddingTop="3dp"
+            android:contentDescription="Bookshelf"
+            android:background="@android:color/transparent"
+            app:tint="@color/primary"
+            android:src="@drawable/book_list"/>
+
+        <ImageButton
+            android:id="@+id/settings_nav_button"
+            android:layout_width="52dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="3dp"
+            android:paddingTop="3dp"
+            android:contentDescription="Settings"
+            android:background="@android:color/transparent"
+            app:tint="@color/primary"
+            android:src="@drawable/settings"/>
+
+    </LinearLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host_fragment_container"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="false"
+        android:layout_above="@+id/main_navbar"
+        tools:context=".MainActivity"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_graph"/>
+
+</RelativeLayout>

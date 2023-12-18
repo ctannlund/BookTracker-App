@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/booklist_book_item"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:padding="8dp"
+    android:gravity="center_vertical"
+    android:layout_margin="4dp"
+    android:background="@drawable/booklist_bg">
+
+    <ImageView
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:src="@drawable/book_cover_temp"
+        app:tint="@color/secondary"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/book_title"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/merriweather"
+            android:textStyle="bold"
+            android:scrollHorizontally="false"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginBottom="4dp"
+            android:text="Book Title"
+            android:textColor="@color/charcoal"/>
+
+        <TextView
+            android:id="@+id/book_author"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/merriweather"
+            android:textStyle="bold"
+            android:scrollHorizontally="false"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginTop="4dp"
+            android:text="Book Author"
+            android:textColor="@color/charcoal"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:gravity="end">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/merriweather"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"
+            android:text = "Pages Read"
+            android:textColor="@color/charcoal"/>
+
+        <TextView
+            android:id="@+id/book_pages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/merriweather"
+            android:textStyle="bold"
+            android:layout_marginTop="4dp"
+            android:text="----- / -----"
+            android:textColor="@color/charcoal"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

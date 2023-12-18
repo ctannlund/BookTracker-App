@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:padding="8dp"
+    android:gravity="center_vertical"
+    android:layout_margin="4dp"
+    android:background="@drawable/booklist_bg">
+
+        <TextView
+            android:id="@+id/log_book_title"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:scrollHorizontally="false"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:fontFamily="@font/merriweather"
+            android:textStyle="bold"
+            android:text="Book Title"
+            android:textColor="@color/charcoal"/>
+
+        <TextView
+            android:id="@+id/log_book_author"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/log_book_title"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:scrollHorizontally="false"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:fontFamily="@font/merriweather"
+            android:textStyle="bold"
+            android:text="Book Author"
+            android:textColor="@color/charcoal"/>
+
+        <TextView
+            android:id="@+id/log_book_pages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_toStartOf="@id/log_book_date"
+            android:scrollHorizontally="false"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:fontFamily="@font/merriweather"
+            android:textStyle="bold"
+            android:text = "Read 0 Pages"
+            android:textColor="@color/charcoal"/>
+
+        <TextView
+            android:id="@+id/log_book_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_alignParentEnd="true"
+            android:scrollHorizontally="false"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:fontFamily="@font/merriweather"
+            android:gravity="end"
+            android:text="Book Date"
+            android:textStyle="bold"
+            android:textColor="@color/charcoal"/>
+
+</RelativeLayout>

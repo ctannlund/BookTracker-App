@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/primary">
+
+    <RelativeLayout
+        android:id="@+id/goal_layout_banner"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp">
+
+        <ImageButton
+            android:id="@+id/goalswitcher_prev_button"
+            android:layout_width="36dp"
+            android:layout_height="72dp"
+            android:layout_marginStart="8dp"
+            android:layout_alignParentStart="true"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/merriweather"
+            android:textStyle="bold"
+            android:src="@drawable/goalswitcher_left"
+            app:tint="@color/charcoal"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/goal_header_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?attr/textAppearanceHeadline5"
+                android:fontFamily="@font/merriweather"
+                android:textColor="@color/charcoal"
+                android:textStyle="bold"
+                android:text="@string/daily_goal_label"/>
+
+            <TextView
+                android:id="@+id/booklist_daily_goal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?attr/textAppearanceHeadline5"
+                android:fontFamily="@font/merriweather"
+                android:textColor="@color/charcoal"
+                android:textStyle="bold"
+                android:text="@string/daily_goal_amount"/>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/goalswitcher_next_button"
+            android:layout_width="36dp"
+            android:layout_height="72dp"
+            android:layout_marginEnd="8dp"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/merriweather"
+            android:textStyle="bold"
+            android:src="@drawable/goalswitch_right"
+            app:tint="@color/charcoal"/>
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/list_progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_below="@id/goal_layout_banner"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_marginBottom="8dp"
+        android:progress="0"
+        android:max="100"
+        android:progressTint="@color/secondary"
+        android:progressBackgroundTint="@color/third"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_floating_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:contentDescription="Add Book"
+        android:src="@drawable/add_button"
+        android:tintMode="@color/primary"
+        android:backgroundTint="@color/secondary"
+        android:foregroundTint="@color/secondary"
+        app:borderWidth="0dp"
+        app:rippleColor="@color/primary"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/book_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/list_progress_bar"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"/>
+
+
+
+</RelativeLayout>

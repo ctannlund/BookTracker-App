@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/primary">
+
+    <TextView
+        android:id="@+id/settings_text_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:textAppearance="?attr/textAppearanceHeadline5"
+        android:fontFamily="@font/merriweather"
+        android:textColor="@color/charcoal"
+        android:textStyle="bold"
+        android:text="Settings"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+<!--            <LinearLayout-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="8dp"-->
+<!--                android:layout_marginEnd="8dp">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="16dp"-->
+<!--                    android:layout_marginBottom="8dp"-->
+<!--                    android:textAppearance="?attr/textAppearanceHeadline6"-->
+<!--                    android:fontFamily="@font/merriweather"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:text="General"/>-->
+
+<!--                <androidx.appcompat.widget.SwitchCompat-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="8dp"-->
+<!--                    android:layout_marginEnd="8dp"-->
+<!--                    android:fontFamily="@font/merriweather"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:text="Mute Page Turning"/>-->
+
+<!--                <androidx.appcompat.widget.SwitchCompat-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="8dp"-->
+<!--                    android:layout_marginEnd="8dp"-->
+<!--                    android:fontFamily="@font/merriweather"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:text="Disable Page Turn Animation"/>-->
+
+<!--            </LinearLayout>-->
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:fontFamily="@font/merriweather"
+                    android:textColor="@color/charcoal"
+                    android:textStyle="bold"
+                    android:text="Notifications"/>
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/enable_notifs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="@font/merriweather"
+                    android:textColor="@color/charcoal"
+                    android:textStyle="bold"
+                    android:text="Enable Notifications"
+                    android:checked="true"/>
+
+<!--                <androidx.appcompat.widget.SwitchCompat-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="8dp"-->
+<!--                    android:layout_marginEnd="8dp"-->
+<!--                    android:fontFamily="@font/merriweather"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:text="Silent"/>-->
+
+<!--                <androidx.appcompat.widget.SwitchCompat-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="8dp"-->
+<!--                    android:layout_marginEnd="8dp"-->
+<!--                    android:fontFamily="@font/merriweather"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:text="Vibrate"/>-->
+
+                <Button
+                    android:id="@+id/notification_test_goal_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/secondary"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="@font/merriweather"
+                    android:textColor="@color/primary"
+                    android:textStyle="bold"
+                    android:text="send Test Notification" />
+
+            </LinearLayout>
+
+<!--            <LinearLayout-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="8dp"-->
+<!--                android:layout_marginEnd="8dp">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="16dp"-->
+<!--                    android:layout_marginBottom="8dp"-->
+<!--                    android:textAppearance="?attr/textAppearanceHeadline6"-->
+<!--                    android:fontFamily="@font/merriweather"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:text="Accessibility"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:paddingTop="8dp"-->
+<!--                    android:paddingBottom="8dp"-->
+<!--                    android:layout_marginStart="8dp"-->
+<!--                    android:layout_marginEnd="8dp"-->
+<!--                    android:fontFamily="@font/merriweather"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:text="Language"-->
+<!--                    android:textColor="@color/charcoal"/>-->
+
+<!--            </LinearLayout>-->
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@color/charcoal"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:fontFamily="@font/merriweather"
+                    android:textStyle="bold"
+                    android:text="Reading Goal"/>
+
+                <Button
+                    android:id="@+id/clear_goal_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:backgroundTint="#8f1313"
+                    android:fontFamily="@font/merriweather"
+                    android:textStyle="bold"
+                    android:textColor="@color/primary"
+                    android:text="Reset reading goal" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/merriweather"
+                android:textColor="@color/charcoal"
+                android:textStyle="bold"
+                android:text="CSC567 Final Project"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/charcoal"
+                android:fontFamily="@font/merriweather"
+                android:textStyle="bold"
+                android:text="Created by Conor Tannlund"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

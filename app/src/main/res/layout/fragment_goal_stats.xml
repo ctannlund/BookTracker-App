@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/primary">
+
+    <RelativeLayout
+        android:id="@+id/stats_layout_banner"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_marginTop="12dp">
+
+        <ImageButton
+            android:id="@+id/stats_goalswitcher_prev_button"
+            android:layout_width="36dp"
+            android:layout_height="72dp"
+            android:layout_marginStart="8dp"
+            android:layout_alignParentStart="true"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/merriweather"
+            android:textStyle="bold"
+            android:src="@drawable/goalswitcher_left"
+            app:tint="@color/charcoal"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/stats_goal_header_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?attr/textAppearanceHeadline5"
+                android:fontFamily="@font/merriweather"
+                android:textStyle="bold"
+                android:textColor="@color/charcoal"
+                android:text="@string/daily_goal_label"/>
+
+            <TextView
+                android:id="@+id/stats_daily_goal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?attr/textAppearanceHeadline5"
+                android:fontFamily="@font/merriweather"
+                android:textStyle="bold"
+                android:textColor="@color/charcoal"
+                android:text="@string/daily_goal_amount"/>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/stats_goalswitcher_next_button"
+            android:layout_width="36dp"
+            android:layout_height="72dp"
+            android:layout_marginEnd="8dp"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/merriweather"
+            android:textStyle="bold"
+            android:src="@drawable/goalswitch_right"
+            app:tint="@color/charcoal"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/progress_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stats_layout_banner">
+
+        <ProgressBar
+            android:id="@+id/stats_progress_bar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="245dp"
+            android:background="@drawable/circular_shape"
+            android:indeterminate="false"
+            android:progressDrawable="@drawable/circular_progress_bar"
+            android:progress="0"
+            android:progressTint="@color/secondary"
+            android:progressBackgroundTint="#FFFFFF"/>
+
+        <TextView
+            android:id="@+id/stats_progress_bar_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="0%"
+            android:textColor="@color/charcoal"
+            android:fontFamily="@font/merriweather"
+            android:textStyle="bold"
+            android:textSize="32sp"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progress_bar_layout"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/pages_day_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:fontFamily="@font/merriweather"
+                android:textStyle="bold"
+                android:textColor="@color/charcoal"
+                android:text="Pages Read (Today): 0"/>
+
+
+            <TextView
+                android:id="@+id/pages_week_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:fontFamily="@font/merriweather"
+                android:textStyle="bold"
+                android:textColor="@color/charcoal"
+                android:text="Pages Read (This Week): 0"/>
+
+            <TextView
+                android:id="@+id/pages_month_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:fontFamily="@font/merriweather"
+                android:textStyle="bold"
+                android:textColor="@color/charcoal"
+                android:text="Pages Read (This Month): 0"/>
+
+            <TextView
+                android:id="@+id/pages_year_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:fontFamily="@font/merriweather"
+                android:textStyle="bold"
+                android:textColor="@color/charcoal"
+                android:text="Pages Read (This Year): 0"/>
+
+            <TextView
+                android:id="@+id/pages_life_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:fontFamily="@font/merriweather"
+                android:textStyle="bold"
+                android:textColor="@color/charcoal"
+                android:text="Pages Read (Lifetime): 0"/>
+
+            <TextView
+                android:id="@+id/books_day_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:fontFamily="@font/merriweather"
+                android:textStyle="bold"
+                android:textColor="@color/charcoal"
+                android:text="Books Finished (Today): 0"/>
+
+            <TextView
+                android:id="@+id/books_week_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:fontFamily="@font/merriweather"
+                android:textStyle="bold"
+                android:textColor="@color/charcoal"
+                android:text="Books Finished (Week): 0"/>
+
+            <TextView
+                android:id="@+id/books_month_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:fontFamily="@font/merriweather"
+                android:textStyle="bold"
+                android:textColor="@color/charcoal"
+                android:text="Books Finished (Month): 0"/>
+
+            <TextView
+                android:id="@+id/books_year_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:fontFamily="@font/merriweather"
+                android:textStyle="bold"
+                android:textColor="@color/charcoal"
+                android:text="Books Finished (Year): 0"/>
+
+            <TextView
+                android:id="@+id/books_life_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:fontFamily="@font/merriweather"
+                android:textStyle="bold"
+                android:textColor="@color/charcoal"
+                android:text="Books Finished (Lifetime): 0"/>
+
+            <TextView
+                android:id="@+id/daily_wins_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:fontFamily="@font/merriweather"
+                android:textStyle="bold"
+                android:textColor="@color/charcoal"
+                android:text="Daily Goals Completed: 0"/>
+
+            <TextView
+                android:id="@+id/weekly_wins_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:fontFamily="@font/merriweather"
+                android:textStyle="bold"
+                android:textColor="@color/charcoal"
+                android:text="Weekly Goals Completed: 0"/>
+
+            <TextView
+                android:id="@+id/monthly_wins_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:fontFamily="@font/merriweather"
+                android:textStyle="bold"
+                android:textColor="@color/charcoal"
+                android:text="Monthly Goals Completed: 0"/>
+
+            <TextView
+                android:id="@+id/yearly_wins_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:fontFamily="@font/merriweather"
+                android:textStyle="bold"
+                android:textColor="@color/charcoal"
+                android:text="Yearly Goals Completed: 0"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

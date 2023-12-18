@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="32dp"
+        android:gravity="center"
+        android:textAppearance="?attr/textAppearanceHeadline5"
+        android:fontFamily="@font/merriweather"
+        android:textStyle="bold"
+        android:textColor="@color/charcoal"
+        android:text="Your Reading Goal"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:textColor="@color/charcoal"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:fontFamily="@font/merriweather"
+        android:textStyle="bold"
+        android:text="How many books do you want to read per year?"/>
+
+    <EditText
+        android:id="@+id/goal_books_per_year"
+        android:layout_width="256dp"
+        android:layout_marginBottom="32dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:textColor="@color/charcoal"
+        android:fontFamily="@font/merriweather"
+        android:hint="Enter yearly book goal"
+        android:backgroundTint="@color/charcoal"
+        android:textColorHint="@color/charcoal"
+        android:importantForAutofill="no"
+        android:inputType="number"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/charcoal"
+        android:gravity="center"
+        android:textAppearance="?attr/textAppearanceHeadline5"
+        android:fontFamily="@font/merriweather"
+        android:textStyle="bold"
+        android:text="Goal Estimates"/>
+
+    <TextView
+        android:id="@+id/month_goal_estimate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textColor="@color/charcoal"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:fontFamily="@font/merriweather"
+        android:textStyle="bold"
+        android:text="--- Books / Month"/>
+
+    <TextView
+        android:id="@+id/week_goal_estimate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:textColor="@color/charcoal"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:fontFamily="@font/merriweather"
+        android:textStyle="bold"
+        android:text="--- Pages / Week"/>
+
+
+    <TextView
+        android:id="@+id/day_goal_estimate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/charcoal"
+        android:gravity="center"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:fontFamily="@font/merriweather"
+        android:textStyle="bold"
+        android:text="--- Pages / Day"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:fontFamily="@font/merriweather"
+        android:textColor="@color/charcoal"
+        android:textStyle="bold"
+        android:text="Based on an average of 350 pages per book"/>
+
+    <Button
+        android:id="@+id/goal_finish_button"
+        android:layout_width="144dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/secondary"
+        android:fontFamily="@font/merriweather"
+        android:textStyle="bold"
+        android:textColor="@color/primary"
+        android:text="Finish"/>
+
+</LinearLayout>
